@@ -1,0 +1,83 @@
+.image {
+    height: 40px;
+    width: 40px;
+}
+
+.anyClass {
+    overflow-y: scroll;
+}
+
+.align-middle {
+    margin-top: -40px;
+}
+
+.imageview {
+    height: 150px;
+    width: 150px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.accueilTel {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.paragraphe {
+    display: none;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+
+/************ Affichage sur téléphone */
+
+@media(max-width: 768px) {
+    .navbar-collapse {
+        display: block;
+    }
+    #btn-menu {
+        display: none;
+    }
+    .paragraphe {
+        z-index: 1;
+    }
+    #gauche {
+        display: none;
+        width: 100%;
+    }
+    .recherche {
+        display: none;
+    }
+    .shadow {
+        margin-top: 20px;
+    }
+    .ajouter {
+        margin-top: 20px;
+    }
+    .btn-menu {
+        display: block;
+    }
+    .paragraphe {
+        display: block;
+    }
+    #btn-menu:checked~#gauche {
+        transition-duration: 5s;
+        display: block;
+        /*margin-left: -170%;
+ 	-moz-transform: rotate(1440deg) scaleX(-1);
+	-webkit-transform: rotate(1440deg) scaleX(-1);
+	-o-transform: rotate(1440deg) scaleX(-1);
+	transform: rotate(1440deg) scaleX(1);*/
+    }
+}
