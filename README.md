@@ -65,10 +65,17 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## Guide d'installation et d'utilisation
 
 Pour executer cette application bien vouloir suivre les étapes suivantes:
- cloner le le projet
+ cloner le projet
+ - importer le projet dans votre dossier source serveur (www du dossier laragon si vous utilisez laragon et pareil si vous utilisez wampServer ou autre)
+ - dirigez-vous via l'invite de commande dans le dossier du projet et entrez la commande : php artisan serve. pour lancer le serveur
+ - l'invite de commande vous donnera un lien qui d'accès sur votre navigateur. saisissez ce lien sur votre navigateur et tappez la touche entré
+ - pour voir les photos importées tappez la commande : php artisan storage:link pour lier votre dossier storage au dossier public du projet qui est accessible au publique
+ - si on vous dit que le dossier existe déjà , alors supprimez le dossier et retapper la commande
+ - soyez connecté sur internet pour avoir accès à toutes les fonctionnalités de l'application
+ - 
  
 ## Security Vulnerabilities
 
